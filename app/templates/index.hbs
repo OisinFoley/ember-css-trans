@@ -1,0 +1,18 @@
+<button {{action 'pressed'}}>click me</button><br>
+{{#if show}}
+	this is text
+	{{!-- {{my-comp}} --}}
+
+
+{{!-- CAN SPECIFIY 'TRANSITION-GROUP' AS A MIXIN TOO - MAKES FOR CLEANER HTML
+SEE -->> OTHER-COMP.JS' --}}
+
+	{{!-- {{#transition-group transition-class="example"}} --}}
+		{{other-comp}}
+	{{!-- {{/transition-group}} --}}
+{{/if}}
+
+<br><br>
+
+
+{{!-- <trans-button>sss</trans-button>  --}}
